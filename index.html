@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebrahim Gomaa — CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      color: #000;
+      background: #fff;
+      font-size: 10.5pt;
+      line-height: 1.45
+    }
+
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 2.5rem;
+      color: #000;
+      background: #fff;
+      font-size: 10.5pt;
+      line-height: 1.45;
+      font-family: 'Times New Roman', Times, serif
+    }
+
+    .name {
+      font-size: 22pt;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    .contact-line {
+      text-align: center;
+      font-size: 9pt;
+      color: #111;
+      margin-bottom: 14px;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    a {
+      color: #111;
+      text-decoration: none
+    }
+
+    .contact-line span {
+      margin: 0 5px;
+      color: #666
+    }
+
+    hr.d {
+      border: none;
+      border-top: 1.5px solid #000;
+      margin: 5px 0 8px
+    }
+
+    .st {
+      font-size: 10pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 7px;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+    .sec {
+      margin-bottom: 13px
+    }
+
+    .ent {
+      margin-bottom: 9px
+    }
+
+    .eh {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px
+    }
+
+    .et {
+      font-weight: 700;
+      font-size: 10.5pt
+    }
+
+    .ed {
+      font-size: 9pt;
+      color: #111;
+      white-space: nowrap;
+      flex-shrink: 0
+    }
+
+    .es {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px
+    }
+
+    .ec {
+      font-style: italic;
+      font-size: 10pt
+    }
+
+    .el {
+      font-size: 9pt;
+      color: #333;
+      white-space: nowrap;
+      flex-shrink: 0
+    }
+
+    ul.b {
+      margin-left: 16px;
+      margin-top: 3px
+    }
+
+    ul.b li {
+      font-size: 10pt;
+      margin-bottom: 2px
+    }
+
+    .sr {
+      margin-bottom: 4px;
+      font-size: 10pt
+    }
+
+    .sr strong {
+      font-weight: 700
+    }
+
+    .sum {
+      font-size: 10pt;
+      line-height: 1.5
+    }
+
+    @media print {
+      body {
+        padding: 0
+      }
+
+      .pb {
+        page-break-after: always
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page" id="cv">
+    <div class="name">Ebrahim Gomaa Awad</div>
+    <div class="contact-line"> New Cairo, Egypt <span>|</span> +20 100 163 4099 <span>|</span> ebrahim.gomaa.hg@gmail.com <span>|</span> <a href="https://linkedin.com/in/ebrahimgomaa">linkedin.com/in/ebrahimgomaa</a> <span>|</span> <a href="https://github.com/devyetii">github.com/devyetii</a> <span>|</span> <a href="https://dev.to/devyetii">dev.to/devyetii</a> </div>
+    <hr class="d">
+    <div class="sec">
+      <div class="st">Summary</div>
+      <p class="sum">Senior Software Engineer with 6+ years of experience designing and delivering scalable backend systems, distributed infrastructure, and cloud-native architectures. Proven track record across fintech, edtech, and blockchain domains, with deep expertise in Go, PHP/Laravel, Node.js Frameworks, Python, Kafka, and distributed storage systems. Strong background in DevOps, CI/CD pipelines, system design, and API development. Non-stop learning and exploration enthusiast.</p>
+    </div>
+    <hr class="d">
+    <div class="sec">
+      <div class="st">Experience</div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Senior Software Engineer</span>
+          <span class="ed">Aug 2024 – Present</span>
+        </div>
+        <div class="es">
+          <span class="ec"><a href="https://www.linkedin.com/company/foodics">Foodics</a> — Restaurant Management SaaS (Series C, KSA)</span>
+          <span class="el">New Cairo, Egypt</span>
+        </div>
+        <ul class="b">
+          <li>Designed and shipped Table Layout and Reservations features for Foodics Black (fine dining POS), directly enabling onboarding of 2 major enterprise restaurant groups.</li>
+          <li>Led backend design and implementation of online payment expansion outside KSA across Foodics RMS and Pay At Table, supporting 2 new markets and anticipated 20% revenue increase.</li>
+          <li>Architected WebSocket communication layer between Foodics RMS and POS devices, reducing order finality latency by 100% and improving real-time UX at scale.</li>
+          <li>Replaced a single-point-of-failure queue storage system with a distributed, replicated system with active failure recovery, eliminating major incidents on high load.</li>
+          <li>Eliminated 100% of CircleCI costs by migrating all CI/CD pipelines to GitHub Actions.</li>
+          <li>Mitigated database outages from heavy push notification batch jobs on Foodics Online by redesigning the notification pipeline, achieving zero incidents post-deployment.</li>
+          <li>Integrated Sentry error monitoring across 20+ Laravel microservices, improving observability and reducing mean time to resolution (MTTR).</li>
+        </ul>
+      </div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Senior Software Engineer (Hour-based Contract)</span>
+          <span class="ed">Nov 2025 – Present</span>
+        </div>
+        <div class="es">
+          <span class="ec"><a href="https://www.linkedin.com/company/vyzn/">vyzn</a> — AI-powered Construction Project Management Platform</span>
+          <span class="el">Zurich, Switzerland (Remote)</span>
+        </div>
+        <ul class="b">
+          <li>Optimizing reporting performance on the Vyzn DBS Contech Platform, improving query response times for large-scale construction project datasets.</li>
+        </ul>
+      </div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Senior Software Engineer</span>
+          <span class="ed">Sep 2022 – Sep 2024</span>
+        </div>
+        <div class="es">
+          <span class="ec"><a href="https://zus.network">Züs</a> — Blockchain-based Decentralised Storage (USA Startup)</span>
+          <span class="el">Cupertino, CA, USA (Remote)</span>
+        </div>
+        <ul class="b">
+          <li>Designed and implemented file permissions system enabling secure NFT hosting on a decentralised storage platform serving 3k+ users.</li>
+          <li>Refactored historical data pipeline, optimizing storage and SQL/NoSQL queries across millions of rows, reducing query latency by 100%.</li>
+          <li>Designed and implemented event sourcing from the blockchain network to client-facing REST APIs using Apache Kafka; delivered a working end-to-end POC.</li>
+          <li>Led development of end-to-end supervised integration testing suite covering all failure and recovery scenarios across distributed system nodes.</li>
+          <li>Improved storage node throughput by migrating from Apache Cassandra to RocksDB, reducing read/write latency by 500%.</li>
+        </ul>
+      </div>
+      <div class="pb"></div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Senior Software Engineer (Freelance)</span>
+          <span class="ed">Dec 2022 – Aug 2024</span>
+        </div>
+        <div class="es">
+          <span class="ec"><a href="https://www.linkedin.com/company/entlaqa">ENTLAQA E-Learning Solutions</a> — Digital Transformation Agency</span>
+          <span class="el">UAE (Remote)</span>
+        </div>
+        <ul class="b">
+          <li>
+            <span style="font-size: 10pt;">Built Laravel-based LMS for Egypt Entrepreneurship and Innovation Centre (EEIC), supporting 61k+ learners.</span>
+          </li>
+          <li>Built the backend of a session-based internal employee training platform for a Major Holding Corporate in Yemen, serving over 50k employees, including life sessions support and AI-assisted Q&amp;A.</li>
+          <li>Integrated Apache Keycloak as a unified IAM and SSO solution across all EEIC subsystems, standardising user management and access control.</li>
+          <li>Built a Reporting System for employee internal knowledge growth metrics for a Major Holding Corporate in Yemen.</li>
+        </ul>
+      </div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Back End Developer (Freelance)</span>
+          <span class="ed">Aug 2022 – Jan 2024</span>
+        </div>
+        <div class="es">
+          <span class="ec"><a href="https://toptal.com">Toptal</a> — Top 1% Engineering Talent Network</span>
+          <span class="el">Remote</span>
+        </div>
+        <ul class="b">
+          <li>Delivered two core backend features for miBaby GmbH's CakePHP ERP system (Germany's leading baby products platform).</li>
+          <li>Added unit and end-to-end test coverage to Super, a UK-based crypto payment startup, improving reliability and deployment confidence.</li>
+        </ul>
+      </div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Software Engineer</span>
+          <span class="ed">Feb 2020 – Nov 2022</span>
+        </div>
+        <div class="es">
+          <span class="ec"><a href="https://www.linkedin.com/company/zinad-security-and-software-services">ZINAD IT</a></span>
+          <span class="el">Egypt</span>
+        </div>
+        <ul class="b">
+          <li>Contributed to the development and maintaenance of a large-scale cybersecurity awareness learning management system, serving enterprise clients and government entities across KSA, UAE, and Egypt.</li>
+          <li>Developed internal developer tools that helped save around 10% daily developer hours.</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="d">
+    <div class="sec">
+      <div class="st">Community</div>
+      <ul class="b">
+        <li>Run a dev.to technical blog with 2,000+ views on 3 articles about AWS Aurora.</li>
+        <li>Served as a Teaching Assistance for Compilers Curriculum in the Computer Engineering Department, Faculty of Engineering, Cairo University, during The Spring 2023 Semster. Taught compilers to 30+ students and led a capstone project of a novel programming language using Lex and Bison.</li>
+      </ul>
+    </div>
+    <hr class="d">
+    <div class="sec">
+      <div class="st">Education</div>
+      <div class="ent">
+        <div class="eh">
+          <span class="et">Cairo University</span>
+          <span class="ed">2018 – 2022</span>
+        </div>
+        <div class="es">
+          <span class="ec">Bachelor of Science, Computer Engineering</span>
+          <span class="el">Cairo, Egypt</span>
+        </div>
+      </div>
+    </div>
+    <hr class="d">
+    <div class="sec">
+      <div class="st">Skills</div>
+      <div class="sr">
+        <strong>Languages:</strong> PHP, JavaScript, TypeScript, Python, Go, SQL
+      </div>
+      <div class="sr">
+        <span style="font-weight: 700;">Frameworks &amp; Libraries:</span>&nbsp;Laravel, Node.js, CakePHP, AngularJS, OpenAI API, NestJS
+      </div>
+      <div class="sr">
+        <span style="font-weight: 700;">Databases:</span>&nbsp;MySQL, PostgreSQL, Redis, RocksDB, Apache Cassandra
+      </div>
+      <div class="sr">
+        <span style="font-weight: 700;">Infrastructure &amp; DevOps:</span>&nbsp;Docker, GitHub Actions, CircleCI, Apache Kafka, Apache Keycloak, Sentry, Linux, Datadog
+      </div>
+      <div class="sr">
+        <span style="font-weight: 700;">Architecture &amp; Practices:</span>&nbsp;Microservices, REST API Design, Event Sourcing, Distributed Systems, System Design, CI/CD, WebSocket, Agile
+      </div>
+      <div class="sr">
+        <span style="font-weight: 700;">Cloud:</span>&nbsp;AWS EC2, AWS ElastiCache, AWS Aurora MySQL, AWS CloudWatch, Microsoft Azure VM, Microsoft Azure Flexible MySQL Server, Azure CLI
+      </div>
+    </div>
+  </div>
+</body>
+</html>
