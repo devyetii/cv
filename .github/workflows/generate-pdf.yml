@@ -1,0 +1,39 @@
+name: Generate PDF on HTML Change
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'index.html'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Generate PDF
+        run: node scripts/generate-pdf.js
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Ebrahim Gomaa Awad.pdf
+          tag_name: cv-${{ github.run_number }}-${{ github.sha }}
+          name: CV Release ${{ github.run_number }}
+          body: Auto-generated PDF from index.html at commit ${{ github.sha }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
