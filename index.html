@@ -151,8 +151,17 @@
     }
 
     @media print {
+      @page {
+        margin: 2rem 2.5rem
+      }
+
       body {
         padding: 0
+      }
+
+      .page {
+        padding: 0;
+        max-width: none
       }
 
       .pb {
