@@ -28,12 +28,17 @@ jobs:
       - name: Generate PDF
         run: node scripts/generate-pdf.js
 
+      - name: Generate release tag
+        id: tag
+        run: echo "tag=$(date +'%Y%m%d-%H%M')" >> "$GITHUB_OUTPUT"
+
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: Ebrahim Gomaa Awad.pdf
-          tag_name: cv-${{ github.run_number }}-${{ github.sha }}
-          name: CV Release ${{ github.run_number }}
+          tag_name: cv-${{ steps.tag.outputs.tag }}
+          name: CV Release ${{ steps.tag.outputs.tag }}
           body: Auto-generated PDF from index.html at commit ${{ github.sha }}
+          make_latest: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
