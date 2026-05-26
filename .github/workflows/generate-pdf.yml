@@ -31,7 +31,7 @@ jobs:
         run: |
           tag=$(date +'%Y%m%d_%H%M%z')
           human_tag=$(date +'%Y/%m/%d %H:%M %Z')
-          file_name="Ebrahim_Gomaa_Awad_CV_$tag.pdf"
+          file_name="Ebrahim_Gomaa_Awad_CV.pdf"
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           echo "human_tag=$human_tag" >> "$GITHUB_OUTPUT"
           echo "file_name=$file_name" >> "$GITHUB_OUTPUT"
