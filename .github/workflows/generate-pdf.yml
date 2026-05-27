@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'index.html'
+      - 'site/*'
       - '.github/workflows/generate-pdf.yml'
 
 permissions:
