@@ -8,7 +8,7 @@ const path = require('path');
   });
   const page = await browser.newPage();
 
-  const htmlPath = path.join(process.cwd(), 'index.html');
+  const htmlPath = path.join(process.cwd(), 'site/index.html');
   await page.goto('file://' + htmlPath, { waitUntil: 'networkidle0' });
 
   await page.pdf({
